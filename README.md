@@ -12,13 +12,13 @@ movie 的api是使用的https://m.maoyan.com/movie/list.json?type=hot&offset=0&l
 侵权请联系我删除，QQ: 1210951474
 
 # 展示
-###音乐
+### 音乐
 ![img_1](./music.png)
-###电影
+### 电影
 ![img_2](./movie_1.png)
-###影片详情1
+### 影片详情1
 ![img_2](./movie_2.png)
-###影片详情2
+### 影片详情2
 ![img_2](./movie_3.png)
 ## 使用
 
