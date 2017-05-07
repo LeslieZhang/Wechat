@@ -15,11 +15,11 @@ movie 的api是使用的https://m.maoyan.com/movie/list.json?type=hot&offset=0&l
 
 ![img_1](./music.png)
 
-![img_2](https://github.com/LeslieZhang/Wechat.git/master/movie_1.png)
+![img_2](./movie_1.png)
 
-![img_2](https://github.com/LeslieZhang/Wechat.git/master/movie_2.png)
+![img_2](./movie_2.png)
 
-![img_2](https://github.com/LeslieZhang/Wechat.git/master/movie_3.png)
+![img_2](./movie_3.png)
 ## 使用
 
 首先需要注册个微信小程序的账号啦，这个就不说了。
