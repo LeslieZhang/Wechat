@@ -1,0 +1,46 @@
+
+<audio class="video"
+poster="{{music.poster}}"
+ name="{{music.name}}" 
+ author="{{music.author}}" 
+ src="{{music.src}}" 
+ id="myAudio"
+  controls 
+  bindended="endedHandle"
+  bindtimeupdate="pro"
+  bindplay="play"
+  bindpause="pause"
+  ></audio>
+
+  <view class="play-music">
+    <view class="icon-play">
+        <image src="../../icon/last-v.png" bindtap="lastPlay"  ></image>
+        <image  src="../../icon/{{isPlay?'stop':'play'}}.png"  bindtap="audioPlay" id="stop"></image>
+        <image src="../../icon/next-v.png" bindtap="nextPlay" ></image>
+    </view>
+    <progress percent="{{percent}}" stroke-width="4"
+activeColor="red"  />
+<view class="lrc">{{musicText}}</view>
+  </view>
+
+<!--
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button>
+-->
+
+<scroll-view  scroll-y="true" style="height: {{scrollHeight}}px">
+    <view class="playlist">播放列表：</view>
+    <view wx:for="{{musicList}}"
+     wx:for-item="music" 
+     wx:for-index="idx"    
+     wx:key="{{idx}}"
+     class="music">
+        <view class="musicPoster">
+            <image src="{{music.poster}}" data-idx="{{idx}}" bindtap="playMusic"></image>
+        </view>
+        <view class="musicName">单曲：{{music.name}}</view>
+        <view class="musicAuthor">歌手：{{music.author}}</view>
+     </view>
+</scroll-view>

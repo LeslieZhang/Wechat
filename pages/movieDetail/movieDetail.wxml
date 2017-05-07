@@ -1,0 +1,67 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<scroll-view scroll-y="true" class="detailItem">
+    <view class="detailTop">
+        <view class="movie">
+            <view class="detailImg">
+                <image src="{{img}}"></image>
+            </view>
+            <view class="detailInfo">
+                <view class="infoName">{{nm}}</view>
+                <view class="infoCat">{{cat}}</view>
+                <view class="infoDir">导演:{{dir}}</view>
+                <view class="infoVer">{{ver}}</view>
+                <view wx:if="{{sc > 0}}">
+                        <view class="infoSc">{{sc}}分</view>
+                    </view>
+                    <view wx:else>
+                    <view class="infoWish">{{wish}}人想看</view>
+                    </view>
+                <view class="classname">
+                    <span class="infoSrc">{{src}} </span> / <span class="infoDur">{{dur}}分钟</span>
+                </view>
+                <view class="infoRt">{{rt}}</view>
+            </view>
+        </view>    
+    </view>
+
+    <view class="detailDra">
+        <button class="detailbtn">立即购票</button>
+        <!--<view class="title">简介</view>-->
+        <view class="infoDra">{{dra}}</view>
+    </view>
+    <!--<view class="viewDiv"></view>-->
+    <view class="detailVideo">
+        <view class="title yugao">预告片</view>
+        <video src="{{vd}}" ></video>
+    </view>
+    <!--<view class="viewDiv"></view>-->
+    <view class="detailComment">
+        <view class="title">
+          <text>短评</text>
+        </view>
+        <view class="comm"> 
+            <view class="detailTime">{{time1}}</view>
+            <view class="detailComm">{{comm1}}</view>
+            <view class="commInfo">
+                <image src="{{avatarurl1}}"></image>
+                <view class="detailNick">{{nickName1}}</view>
+            </view>
+        </view>
+        <view class="comm"> 
+            <view class="detailTime">{{time2}}</view>
+            <view class="detailComm">{{comm2}}</view>
+            <view class="commInfo">
+                <image src="{{avatarurl2}}"></image>
+                <view class="detailNick">{{nickName2}}</view>
+            </view>
+        </view>
+        <view class="comm"> 
+            <view class="detailTime">{{time3}}</view>
+            <view class="detailComm">{{comm3}}</view>
+            <view class="commInfo">
+                <image src="{{avatarurl3}}"></image>
+                <view class="detailNick">{{nickName3}}</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

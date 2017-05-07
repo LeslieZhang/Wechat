@@ -1,0 +1,17 @@
+/* pages/movie/movie.wxss */
+view{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.fonting{font-size:40rpx;line-height:40rpx;color:#000;font-weight:700;width:250rpx;margin:10rpx 0 10rpx 25rpx;}
+.fonting image{width:40rpx;height:40rpx;}
+.tab_movie{display:flex;margin:20rpx 25rpx;padding-bottom:20rpx;border-bottom: 1rpx solid #E6E6E6;}
+.tab_movie image{display:block;width:128rpx;height:178rpx;cursor: pointer;}
+.movie-center{width:432rpx;margin-left:20rpx;margin-top:8rpx;}
+.movie-center text{display:block;font-size:24rpx;line-height: 40rpx;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;color:#666;}
+.movie-center .movie-name{font-size:32rpx;line-height: 36rpx;color:#222!important;}
+.movie-center .movie-show{color:#999;}
+.movie-right{font-size:34rpx;color: #FFB400;margin-left:16rpx;}
+.movie-right .score{margin-left:20rpx;}
+.movie-right text{font-size:22rpx; }
+button{width:106rpx;height:53rpx;font-size:24rpx;line-height: 53rpx;margin-top:86rpx;background:#EF4238;color:#fff}
+.button-hover {
+  background:#cc0000;color:#fff
+}

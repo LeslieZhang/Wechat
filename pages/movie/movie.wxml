@@ -1,0 +1,35 @@
+<view class="in_theaters">
+    <view class="fonting">
+        正在热映
+        <image src="../../icon/hot.png" class="hot"  ></image>
+    </view>
+    <scroll-view scroll-y="true" class="movieItem" style="height:{{scrollHeight}}px"                bindscrolltoupper="refresh" bindscrolltolower="loadMore">
+        <view class="tab_movie" wx:for="{{movieList}}"
+        wx:for-item="movieItem"
+        wx:for-index="idx"    
+        wx:key="{{idx}}"
+        bindtap="showDetail" data-id="{{movieItem.id}}" data-nm="{{movieItem.nm}}" 
+        >
+          <image src="{{movieItem.img}}" class="movie-left" ></image>
+          <view class="movie-center">
+                <view class="movie-name">{{movieItem.nm}}</view>
+                <text>{{movieItem.cat}}</text> 
+                <text>主演：{{movieItem.star}}</text>
+                <text class="movie-show">{{movieItem.showInfo}}</text> 
+          </view>
+          <view class="movie-right">
+            <view class="score">
+                {{movieItem.sc}}
+                <text>分</text>
+            </view>
+            <button class="movie-btn">购票</button>
+          </view>
+        </view>
+    </scroll-view>
+ 
+</view>
+<view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadChage">
+        数据加载中...
+    </loading>
+</view>

@@ -1,0 +1,24 @@
+/* pages/music/music.wxss */
+
+.video{margin-left:50rpx;margin-top:10rpx;width:608rpx;height:134rpx;}
+
+.play-music{width:608rpx;margin-left:50rpx;margin-bottom:10rpx}
+.play-music image{width:48rpx;height:48rpx;margin:10rpx;}
+.icon-play{text-align: center;}
+.lrc{text-align: center;color:#1afa29;margin-top:10rpx;}
+.playlist{font:32rpx/32rpx '';margin:10rpx 0 14rpx 50rpx;}
+.music{font:26rpx/26rpx '';
+    margin:0 50rpx 30rpx 50rpx;
+    overflow: hidden;
+    border:1rpx solid #DDD;width:608rpx;
+    padding:14rpx 0;
+    background:#f8f5f5;
+}
+.music image{width:150rpx;
+            height:150rpx;
+            overflow: hidden;font-size:0;
+            border-radius: 50%;
+            margin-left:16rpx;}
+.musicPoster{float:left;margin-right:26rpx;}
+.musicName{margin-top:40rpx;}
+.musicAuthor{margin-top:10rpx;}

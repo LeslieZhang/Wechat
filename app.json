@@ -1,0 +1,40 @@
+{
+  "pages":[ "pages/movie/movie",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/music/music",
+   
+    "pages/movieDetail/movieDetail", 
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0cf",
+    "navigationBarTitleText": "哆啦A梦的口袋",
+    "navigationBarTextStyle":"#fff"
+  },
+    "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"icon/home.png",
+      "selectedIconPath":"icon/home-v.png"
+    }, {
+      "pagePath": "pages/music/music",
+      "text": "音乐",
+      "iconPath":"icon/music.png",
+      "selectedIconPath":"icon/music-v.png"
+    }, {
+      "pagePath": "pages/movie/movie",
+      "text": "电影",
+      "iconPath":"icon/movie.png",
+      "selectedIconPath":"icon/movie-v.png"
+    }, {
+      "pagePath": "pages/me/me",
+      "text": "关于我",
+       "iconPath":"icon/me.png",
+      "selectedIconPath":"icon/me-v.png"
+    }],
+    "selectedColor":"#1afa29"
+  }
+}

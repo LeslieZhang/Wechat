@@ -1,0 +1,23 @@
+
+.detailItem{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;color: #555;font-size:28rpx;    background: #f4f4f4;}
+.detailTop{ background-color:rgba(64,69,77,.55 );background-size: cover}
+.movie{color: #fff;z-index: 100;
+    padding:30rpx; opacity:1;display:flex;font-size:24rpx;line-height: 36rpx;}
+.movie image{width:214rpx;height:300rpx;border: solid 1rpx #f0f2f3;}
+.movie .detailInfo{margin-left:24rpx;}
+.movie .infoName{font-size:38rpx;line-height: 46rpx;}
+.movie .infoSc{color: #ffc600;font-size:34rpx;line-height: 40rpx;}
+
+.detailDra{padding:20rpx 30rpx; background:#fff;line-height: 38rpx;border-bottom: 1rpx solid #e5e5e5;}
+.detailDra .detailbtn{background: #e54847;color:#fff;width:690rpx;height:72rpx;margin-top:10rpx;margin-bottom:20rpx;line-height:72rpx;font-size:32rpx;}
+
+.detailVideo{margin:20rpx 0;padding:0 30rpx;background:#fff;border-top: 1rpx solid #e5e5e5; border-bottom: 1rpx solid #e5e5e5;font-size:34rpx;color: #666;line-height: 70rpx;font-weight: 700;}
+.detailVideo video{margin-left:32rpx;}
+
+.detailComment{margin:20rpx 0;background:#fff;border-top: 1rpx solid #e5e5e5; border-bottom: 1rpx solid #e5e5e5;}
+.detailComment .title{font-size:34rpx;color: #666;line-height: 78rpx;font-weight: 700;border-bottom: 1rpx solid #e5e5e5;}
+.detailComment .title text{margin-left:30rpx;}
+.detailComment .comm{padding-right:30rpx;margin:20rpx 0 20rpx 30rpx;border-bottom: 1rpx solid #e5e5e5;font-size:28rpx;color: #333;line-height:44rpx;padding-bottom:30rpx;}
+.detailComment .comm .detailTime{text-align: right;color:#666;margin-bottom:10rpx;}
+.detailComment .commInfo{text-align:left;color:#666;margin-top:20rpx;line-height:60rpx;}
+.commInfo image{border-radius: 50%;width:60rpx;height:60rpx;display: inline-block;float:left;margin-right: 20rpx;}
