@@ -13,7 +13,7 @@ movie 的api是使用的https://m.maoyan.com/movie/list.json?type=hot&offset=0&l
 
 # 展示
 
-![img_1](https://github.com/LeslieZhang/Wechat.git/master/music.png)
+![img_1](./music.png)
 
 ![img_2](https://github.com/LeslieZhang/Wechat.git/master/movie_1.png)
 
