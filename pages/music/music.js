@@ -339,7 +339,7 @@ musicLrc = parseLyric(that.data.musicList[id].lrc)
   },
 
   playMusic:function(event){
-    var idx = event.target.dataset.idx;
+    var idx = event.currentTarget.dataset.idx;
     var that = this;
     console.log(idx)
     console.log(this.data.musicList[idx])

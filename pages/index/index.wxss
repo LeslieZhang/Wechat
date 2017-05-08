@@ -1,24 +1,108 @@
-/**index.wxss**/
-/*.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+page{
+  font-family: "PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 100;
+  background: #000106 url(http://www.zhangfu.online/music/bg.jpg) center bottom no-repeat;
+  background-size: 100%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}*/
-
-swiper{height:340rpx}
-image{width:750rpx;height:340rpx}
-.userinfo {
+.container {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  box-sizing: border-box;
+  background-size: 100%;
+  padding: 20rpx;
+} 
+.top {
+  flex-direction: row;
+  margin-top: 40rpx;
+ 
 }
 
+.top view {
+  color: #fff;
+  text-align: right;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.topRegion {
+  padding-top: 100rpx;
+  height:100rpx;
+  vertical-align: bottom;
+}
+.topRegion #temperature {
+  color:#fff;
+  float: left;
+  font-size: 120rpx;
+  font-weight: 600;
+}
+
+.topRegion #summary {
+
+  color:#FFF;
+  margin-left: 30rpx;
+  margin-top: 70rpx;
+  font-size: 50rpx;
+  float: left;    
+
+}
+
+#update_time{
+  font-size: 28rpx;
+  padding-top:20rpx;
+}
+.topRegion text {
+  display: block;
+  float: left;
+  width: 250rpx;
+  text-align: center;  
+}
+
+.summary {
+  padding: 62rpx 18rpx 18rpx;
+  color: #eee;
+  font-size: 28rpx;
+  line-height: 50rpx;
+
+}
+.daily {
+  /*position: fixed;*/
+  bottom:0;
+  left: -20rpx;
+  padding: 20rpx 52rpx;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+.daily_item {
+
+  float:left;
+  width:100%;
+  color: #FFF;  
+  height:80rpx;
+  padding-left: 20rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+
+}
+.daily_weekday {
+  
+  display: block;
+  float: left;     
+  width: 60rpx;
+}
+
+.daily_temperature {
+  
+  float: left;
+  display: block;  
+  width: 120rpx;
+  margin-right: 50rpx;
+  text-align: right;
+
+}
+.daily_summary {
+  
+  float: left;
+  display: block;  
+
+}

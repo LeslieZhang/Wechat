@@ -14,12 +14,11 @@ var getList = function(that){
     method: 'GET', 
     success: function(res){
       var movieList = that.data.movieList;
+      // console.log(movieList)
       for(var i=0;i<res.data.data.movies.length;i++){
         movieList.push(res.data.data.movies[i])
       }
-      /*for(var i=res.data.data.movies.length;i>0;i--){
-        movieList.push(res.data.data.movies[i])
-      }*/
+    
       that.setData({
         movieList:movieList
       })
@@ -43,21 +42,7 @@ Page({
         })
       }
     })
-    /*wx.request({
-      url: 'https://m.maoyan.com/movie/list.json?type=hot&offset=0&limit=1000', 
-    
-      header: {
-          'content-type': 'application/json'
-      },
-      success: function(res) {
-        console.log(res.data)
-        that.setData({
-          movieList:res.data.data.movies
-          
-        })
-        console.log(that.data.movieList)
-      }
-})*/
+
 getList(that)
   },
 

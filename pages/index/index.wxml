@@ -1,21 +1,23 @@
 <!--index.wxml-->
-<!--
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="container">  
+  <view class="top">
+    <view>{{weather.city}}</view>
+    <view>{{weather.current.formattedDate}}</view>
+    <view id="update_time">{{weather.current.formattedTime}} 更新</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="topRegion">
+    <view id="temperature" >{{weather.current.temperature}}℃</view>
+    <view id="summary" >{{weather.current.summary}}</view>
   </view>
-</view>-->
-
-<swiper indicator-dots="{{true}}"
-  autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}" circular="{{true}}">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image"/>
-    </swiper-item>
-  </block>
-</swiper>
-
+  <view class="summary" >
+    <view>{{weather.daily.summary}}</view>
+  </view>
+  <view class="daily" >
+    <view class="daily_item" wx:for="{{weather.daily.data}}"  wx:for-index="idx"    
+        wx:key="{{idx}}">
+      <view class="daily_weekday" >{{item.weekday}}</view>
+      <view class="daily_temperature" >{{item.temperatureMin}}-{{item.temperatureMax}}℃ </view>      
+      <view class="daily_summary" >{{item.summary}}</view>
+    </view>
+  </view>
+</view>

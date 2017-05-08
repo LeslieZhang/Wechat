@@ -36,9 +36,10 @@ activeColor="red"  />
      wx:for-item="music" 
      wx:for-index="idx"    
      wx:key="{{idx}}"
-     class="music">
+     class="music"
+     data-idx="{{idx}}" bindtap="playMusic">
         <view class="musicPoster">
-            <image src="{{music.poster}}" data-idx="{{idx}}" bindtap="playMusic"></image>
+            <image src="{{music.poster}}" ></image>
         </view>
         <view class="musicName">单曲：{{music.name}}</view>
         <view class="musicAuthor">歌手：{{music.author}}</view>

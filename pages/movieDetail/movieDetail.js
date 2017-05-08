@@ -34,6 +34,7 @@ Page({
        var comm = res.data.data.CommentResponseModel.hcmts;
        var len = res.data.data.MovieDetailModel.dra.length-4;
        that.setData({
+         nm: list.nm,
          dir: list.dir,
          ver: list.ver,
          img: list.img,
@@ -60,6 +61,11 @@ Page({
        })
      }
    })
+  //  设置导航条
+    wx.setNavigationBarTitle({
+        title:this.data.nm ,
+        
+      })
     // 页面初始化 options为页面跳转所带来的参数
   },
   onReady:function(){
